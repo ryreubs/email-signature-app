@@ -45,20 +45,20 @@ export default class AppArea extends Component {
 					</header>
 				
 					<div className="row 150%">
-						<div className="12u 12u$(medium)">
+				{/*		<div className="12u 12u$(medium)">
 							<ul style={mStyle} className="nav nav-pills">
 								<li className="active">
 									<a id="lo" data-toggle="tab" href="#home">Main</a>
 								</li>
-								{/*<li>
+								<li>
 									<a id="lo" data-toggle="tab" href="#menu1">Social</a>
-								</li>*/}
+								</li>
 								<li>
 									<a id="lo" data-toggle="tab" href="#menu2">Style</a>
 								</li>
 							</ul>							
-						</div>
-						<div className="6u 12u$(medium)">
+						</div>*/}
+						<div className="12u 12u$(medium)">
 							<div className="tab-content gone">
 								<div id="home" className="tab-pane fade in active">
 									<Main updateSign={this.props.updateSign} Social={this.props.Social} addSign={this.props.addSign}/>
@@ -70,10 +70,11 @@ export default class AppArea extends Component {
 									<Style updateSign={this.props.updateSign} Social={this.props.Social} addSign={this.props.addSign}/>
 								</div>						
 							</div>
-						</div>
-						<div className="6u 12u$(medium)">
 							<AppView Social={this.props.Social}/>
 						</div>
+						{/*<div className="6u 12u$(medium)">
+							<AppView Social={this.props.Social}/>
+						</div>*/}
 					</div>
 				</div>
 				<a className="btn btn-lg btn-success" style={{marginTop:'30px'}} data-toggle="modal" href='#modal-id'><i className="icon fa fa-check"></i> Generate Email Signature</a>

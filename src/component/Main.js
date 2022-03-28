@@ -1,9 +1,10 @@
-import React, {Component} from 'react';
+import React, {Component} from 'react'
+import blackLogo from '../images/sindica-logo-black.png'
 
 export default class Main extends Component {
     constructor(props) {
         super(props)
-        this.handleChange = this.handleChange.bind(this);
+        this.handleChange = this.handleChange.bind(this)
 
 
     }
@@ -11,7 +12,7 @@ export default class Main extends Component {
 
     createSign(event) {
 
-        event.preventDefault();
+        event.preventDefault()
         const Social = {
           firstName: this.firstName.value,
           lastName: this.lastName.value,
@@ -27,16 +28,16 @@ export default class Main extends Component {
           address2: this.address2.value,
           avatar: this.avatar.value
         }
-        this.props.addSign(Social);
+        this.props.addSign(Social)
       }
 
       handleChange(e) {
-        const Sign = this.props.Social;
+        const Sign = this.props.Social
         const updatedSign = {
           ...Sign,
           [e.target.name]: e.target.value
         }
-        this.props.updateSign(updatedSign);
+        this.props.updateSign(updatedSign)
       }
     render() {
         return (
@@ -46,7 +47,7 @@ export default class Main extends Component {
                         <label htmlFor="avatar">LOGO</label>
                         <select className="form-control" type="text" ref={(input) => this.avatar  = input} onChange={(e) => this.handleChange(e)} name="avatar" placeholder="www.example.com/img.jpg"  >
                         <option value="">- select logo -</option>
-                        <option value="https://drive.google.com/uc?id=1d5lUK65BS6a3jDQADrxFFC0Y6n7yYVDe">Sindica Logo - Black</option>
+                        <option value={ blackLogo }>Sindica Logo - Black</option>
                     </select>
                     </div>   
                     <div className="col-lg-6 form-group">
