@@ -30,7 +30,7 @@ export default class AppView extends Component {
         }
         const br = {
 
-            borderRightColor: '#450877',
+            borderRightColor: '#12B981',
             borderRightStyle: 'solid',
             borderRightWidth: '4px',
             verticalAlign: 'top'
@@ -41,7 +41,7 @@ export default class AppView extends Component {
                 display: 'none'
             }
             : {
-                color: '#450877',
+                color: '#12B981',
                 fontSize: '1rem',
                 fontFamily: ff,
                 textAlign: 'left',
@@ -98,7 +98,7 @@ export default class AppView extends Component {
         const l = k
             ? cStyle
             : {
-                color: '#450877',
+                color: '#12B981',
                 fontSize: fs,
                 fontFamily: ff,
                 textAlign: ta
@@ -107,7 +107,7 @@ export default class AppView extends Component {
         const n = m
             ? cStyle
             : {
-                color: '#450877',
+                color: '#12B981',
                 fontSize: fs,
                 fontFamily: ff,
                 textAlign: ta
